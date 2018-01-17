@@ -12,10 +12,10 @@ define("PATH_RELATIVE_PATTERN", "\/MVC\/");
 switch ($_SERVER['SERVER_NAME']) {
     default:
         define('HOSTNAME', 'localhost');
-        define('DB_HOST', 'localhost');
-        define('DB_NAME', 'meetup');
-        define('DB_USER', 'root');
-        define('DB_PWD', '');
+        define('DB_HOST', 'mysql556.sql002');
+        define('DB_NAME', 'elomaridibbla');
+        define('DB_USER', 'elomaridibbla');
+        define('DB_PWD', 'Iramole199');
         define('DB_PORT', '3306');
         define('DB_PREFIXE', '');
         define('DIR', $_SERVER['DOCUMENT_ROOT']);

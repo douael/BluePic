@@ -90,14 +90,27 @@ class UserController
 
     public function loginAction()
     {
+        $data = $_POST;
+        $user = new User(0);
+        $user->getUserByUsername($data['login']);
 
+        session_destroy();
+
+        if (password_verify($data['pwd'], $user->getPassword())) {
+            if ($user->getStatus() == 0) {
+                header('Location: /Index/login/verify');
+                exit();
+            }
             session_start();
-            $_SESSION['id']         = "1";
-            $_SESSION['username']   = "admin";
-            $_SESSION['role']   = 1;
+            $_SESSION['id']         = $user->getId();
+            $_SESSION['username']   = $user->getUsername();
+            $_SESSION['role']   = $user->getRoleId();
 
             header('Location: /admin');
-
+        } else {
+            header('Location: /admin/back/login/error');
+            exit();
+        }
     }
 
     public function logoutAction()
