@@ -16,8 +16,8 @@ public function fbcallbackAction(){
 session_start();
 var_dump($_GET);
        $fb = new Facebook\Facebook([
-         'app_id' => '898222853688349', // Replace {app-id} with your app id
-         'app_secret' => 'b734edbc9736d316fc93591288165122',
+         'app_id' => APP_ID, // Replace {app-id} with your app id
+         'app_secret' => APP_SECRET,
          'default_graph_version' => 'v2.2',
          ]);
 

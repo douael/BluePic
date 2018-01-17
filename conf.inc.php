@@ -8,6 +8,8 @@ ini_set("smtp_port", "25");
 define("DS", DIRECTORY_SEPARATOR);
 define("PATH_RELATIVE", "/MVC/");
 define("PATH_RELATIVE_PATTERN", "\/MVC\/");
+define("APP_ID",'898222853688349');
+define("APP_SECRET",'b734edbc9736d316fc93591288165122');
 
 switch ($_SERVER['SERVER_NAME']) {
     default:

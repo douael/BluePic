@@ -141,7 +141,7 @@ Sinon affichez l'email de l'internaute
  <script>
    window.fbAsyncInit = function() {
      FB.init({
-       appId      : '898222853688349',
+       appId      : <?php echo APP_ID; ?>,
        cookie     : true,
        xfbml      : true,
        version    : 'v2.10'
