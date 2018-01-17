@@ -1,0 +1,40 @@
+rss {
+display: block;
+font-family: verdana, arial;
+}
+title {
+display: block;
+margin: 5px;
+padding: 2px;
+color: gray;
+border-bottom: 1px solid silver;
+}
+description , pubDate {
+display: block;
+margin: 5px;
+padding: 2px;
+color: gray;
+}
+author{
+display: block;
+margin: 5px;
+padding: 2px;
+color: #790000;
+}
+link {
+display: block;
+font-size: small;
+padding-left: 10px;
+}
+item {
+display: block;
+background-color: #ffeded;
+padding: 2px 30px 20px 30px;
+border: 1px solid grey;
+margin: 10px;
+border-radius: 5px;
+}
+/* Elements caché */
+language, lastBuildDate, ttl, guid, category {
+display: none;
+}
