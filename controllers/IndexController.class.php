@@ -12,6 +12,12 @@ class IndexController
 
         $v->assign("title", "Homepage");
     }
+    public function loginAction($params)
+    {
+        $v = new View("login");
+
+        $v->assign("title", "Connexion");
+    }
 public function fbcallbackAction(){
 session_start();
 var_dump($_GET);
